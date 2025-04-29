@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with SkyNova</title>
+    <link rel="icon" type="images\png" href="airlogo.png">
+    <script>
+        function sub() {
+            alert("Thank you for choosing SkyNova Airlines! Your flight is being processed.");
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            background-color: rgb(1, 74, 173);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 12px;
+            font-size: 2.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        form {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        div {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 8px rgba(102, 126, 234, 0.6);
+            outline: none;
+        }
+
+        button {
+            background: #667eea;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border: none;
+
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+
+        textarea {
+            resize: none;
+            height: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>SkyNova Airlines</h1>
+    <h2>Flight booking form</h2>
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div>
+            <label for="flight">Flight</label>
+            <select name="flight" id="flight">
+                <option value="" disabled selected>Select flight</option>
+                <option value="New York to London">New York to London</option>
+                <option value="Mumbai to Tokyo">Mumbai to Tokyo</option>
+                <option value="Paris to Dubai">Paris to Dubai</option>
+                <option value="Sydney to New York">Sydney to New York</option>
+                <option value="San Francisco to Paris">San Francisco to Paris</option>
+                <option value="Rome to Bangkok">Rome to Bangkok</option>
+            </select>
+        </div>
+        <div>
+            <label for="Time">Time slot</label>
+            <input type="time" id="startTime" name="startTime">
+
+            <label for="Time">TO</label>
+            <input type="time" id="endTime" name="endTime">
+        </div>
+        <div>
+            <label for="add">Address</label>
+            <textarea name="Address" id="add" cols="30" rows="10"></textarea>
+        </div>
+        <button onclick="sub()">Submit</button>
+    </form>
+</body>
+
+</html>

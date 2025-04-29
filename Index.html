@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyNova Airlines</title>
+    <link rel="icon" type="images\png" href="airlogo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function bookFlight() {
+
+            window.location.href = 'form.html';
+        }
+        function showSection(section) {
+            document.querySelectorAll('.container, .flights, .destinations, .contact').forEach(el => el.style.display = 'none');
+            document.querySelector(`.${section}`).style.display = 'block';
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>Welcome to SkyNova Airlines</header>
+    <nav>
+        <a onclick="showSection('container')">Home</a>
+        <a onclick="showSection('flights')">Flights</a>
+        <a onclick="showSection('destinations')">Destinations</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="container" style="display: block;">
+        <h1>Book Your Flight Now!</h1>
+        <p>Experience comfort and luxury with SkyNova Airlines. Your journey starts here.</p>
+        <div class="home-images">
+            <img src="https://t3.ftcdn.net/jpg/03/06/22/80/360_F_306228011_2jldV5x45r0Ou3IiFJNMj3PDJPXKfgEX.jpg"
+                alt="Plane in flight">
+            <img src="https://t3.ftcdn.net/jpg/02/35/92/02/360_F_235920274_Wi0l5LzeThTy5u1E43R8qczGzgKxfk51.jpg"
+                alt="Comfortable seating">
+            <img src="https://plus.unsplash.com/premium_photo-1663039887624-82bb708dcced?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="travel">
+            <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="airline">
+
+        </div>
+        <div>
+            <h2>
+                <center>
+                    <b>Fly Beyond Limits with SkyNova Airlines!</b>
+                </center>
+            </h2>
+        </div>
+        <p class="description">
+            — where comfort meets the clouds! At SkyNova Airlines, we are committed to providing safe, reliable, and
+            luxurious air travel experiences. Our key highlights include seamless booking options, spacious seating, and
+            top-tier in-flight services, ensuring your journey is as enjoyable as your destination. With daily flights
+            connecting major cities and exciting holiday packages, we offer affordable rates without compromising on
+            quality. Enjoy exclusive offers, such as early-bird discounts, loyalty rewards, and seasonal
+            promotions.Choose SkyNova Airlines for a smooth, stylish, and unforgettable flight experience. Book your
+            next
+            adventure today!</p>
+        <h2>Special Features and Offers</h2>
+        <div class="special-features">
+            1.Complimentary in-flight meals and beverages.<br>
+            2.Spacious and comfortable seating.<br>
+            3.Exclusive discounts for frequent flyers.<br>
+            4.Priority boarding for premium members.<br>
+            5.Seasonal deals on international flights.<br>
+            6.24/7 customer support for booking assistance.<br>
+        </div>
+        <h2>Book Your Flight Now!</h2>
+        <p>Choose from our list of available flights and secure your seat today!</p>
+        <button onclick="bookFlight()">Book Now</button>
+    </div>
+
+    <div class="flights">
+        <h1>Airline Overview</h1>
+        <table>
+            <tr>
+                <td class="main-box">2,200+<br>Daily Flights</td>
+                <td class="small-box">90+<br>Domestic Destinations</td>
+                <td class="small-box">40+<br>International Destinations</td>
+            </tr>
+            <tr>
+                <td class="small-box">700 Mn+<br>Happy Customers</td>
+                <td class="small-box">400+<br>Fleet Strong</td>
+                <td class="small-box">50000+<br>Employees</td>
+            </tr>
+        </table>
+        <h1>Popular Flights</h1>
+        <ul>
+            <li>New York to London - $500</li>
+            <li>Mumbai to Tokyo - $700</li>
+            <li>Paris to Dubai - $600</li>
+            <li>Sydney to New York - $800</li>
+            <li>San Francisco to Paris - $650</li>
+            <li>Rome to Bangkok - $550</li>
+        </ul>
+        <h2>And Many More Flights...</h2>
+    </div>
+
+    <div class="destinations">
+        <h1>Top Destinations</h1>
+        <h3>London</h3>
+        <div class="Destination-item">
+            <img src="https://t4.ftcdn.net/jpg/02/57/75/51/240_F_257755130_JgTlcqTFxabsIKgIYLAhOFEFYmNgwyJ6.jpg"
+                alt="london"></span>
+            <p>
+                London, the vibrant capital of England, is a treasure trove for tourists, offering an unparalleled blend
+                of
+                history, culture, and modernity. From iconic landmarks like the Tower of London, Big Ben, and Buckingham
+                Palace to world-class museums such as the British Museum and the Tate Modern, the city is brimming with
+                attractions. Visitors can enjoy the scenic beauty of the River Thames, explore the charming streets of
+                Covent Garden, or take a panoramic view of the skyline on the London Eye. With its diverse culinary
+                scene,
+                bustling markets, and rich theater culture in the West End, London promises an unforgettable experience
+                for
+                travelers of all interests. Whether you're delving into its royal heritage or embracing its contemporary
+                flair, London truly has something for everyone.
+            </p>
+        </div>
+        <hr>
+
+        <h3>Tokyo</h3>
+        <div class="Destination-item">
+            <img src="https://t3.ftcdn.net/jpg/02/65/23/70/240_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg"
+                alt="tokyo">
+            <p>
+                Tokyo, the dazzling metropolis that beautifully blends ultramodern innovations with deep-rooted
+                traditions.
+                As Japan's capital, it offers a myriad of experiences, from exploring historic sites like the Meiji
+                Shrine
+                and the Asakusa Senso-ji Temple to immersing oneself in the futuristic vibes of Akihabara and Shibuya.
+                Visitors can marvel at breathtaking views of the city skyline from Tokyo Skytree, indulge in world-class
+                Japanese cuisine, or wander through serene gardens such as Shinjuku Gyoen. Whether you're a fan of
+                anime,
+                fashion, or history, Tokyo's unique charm and dynamic energy cater to all interests. With its efficient
+                public transportation, vibrant neighborhoods, and warm hospitality, Tokyo is a must-visit destination
+                for
+                travelers seeking a blend of tradition and innovation.
+            </p>
+        </div>
+        <hr>
+        <h3>Dubai</h3>
+        <div class="Destination-item">
+            <img src="https://t3.ftcdn.net/jpg/01/83/37/92/240_F_183379298_l4fEG2OFSETkmnRkH9rf2w1ujopLwFSY.jpg"
+                alt="dubai">
+            <p>
+                Dubai, the glittering oasis in the desert, known for its grandeur and unparalleled luxury. This city in
+                the
+                United Arab Emirates captivates visitors with architectural wonders like the Burj Khalifa, the tallest
+                building in the world, and the Palm Jumeirah, an artificial island shaped like a palm tree. From
+                extravagant
+                shopping at the Dubai Mall to thrilling desert safaris and luxurious beach resorts, Dubai offers endless
+                possibilities for adventure and relaxation. With its rich Arabian heritage, vibrant souks, and
+                cutting-edge
+                attractions, Dubai seamlessly combines tradition with modernity, making it a must-visit destination.
+            </p>
+        </div>
+        <hr>
+        <h3>New York</h3>
+        <div class="Destination-item">
+            <img src="https://t4.ftcdn.net/jpg/01/26/21/61/240_F_126216157_NMcUhK1iOgw2asroRaX0686iYgjbdMNr.jpg"
+                alt="New york">
+            <p>
+                New York City, the iconic melting pot of culture, art, and commerce, is a vibrant destination that never
+                sleeps. From the dazzling lights of Times Square to the serene beauty of Central Park, the city offers a
+                diverse range of experiences for visitors. Explore world-class museums like the Metropolitan Museum of
+                Art,
+                catch a Broadway show, or savor the flavors of international cuisine in diverse neighborhoods like
+                Chinatown
+                and Little Italy. With its towering skyscrapers, historic landmarks, and bustling streets, New York City
+                is
+                a place where dreams come to life. Whether you're strolling through the charming streets of Greenwich
+                Village or taking in the panoramic views from the Empire State Building, New York City promises an
+                unforgettable journey.
+            </p>
+        </div>
+
+        <h2>And Many More Destinations...</h2>
+
+
+
+
+    </div>
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <p><strong>Email:</strong> support@SkyNovaairlines.com</p>
+        <p><strong>Phone:</strong> +1 (800) 555-1234</p>
+        <p><strong>Address:</strong> 123 Aviation Street, New York, NY, USA</p>
+        <h2>Additional Contact Information</h2>
+        <p><strong>Customer Support:</strong> +1 (800) 555-5678</p>
+        <p><strong>Corporate Office:</strong> +1 (800) 555-8765</p>
+        <p><strong>Web Designers:</strong> Aadarsh Avinash Patil, Kranti Dattareya Patil, Anuj Arun Patil</p>
+    </div>
+
+    <footer>
+        &copy; 2025 SkyNova Airlines. All rights reserved.
+    </footer>
+</body>
+
+</html>
